@@ -1,6 +1,6 @@
 package types
 
-//Money представляет собой денежную сумму в минимальных единицах (центы, копейки, дирамы и т.д.).
+//Money представляет собой денежную сумму в минимальных единицах (центы, копейки,дирамах)
 type Money int64
 
 
@@ -8,9 +8,8 @@ type Money int64
 //Category представляет собой  категорию, в которой был совершен платеж(авто, аптеки, рестораны и т.д.).
 type Category string
 
-
  //Payment представляет информацию о платеже
-type PaymentSource struct {
+type Payment struct {
 	ID int
 	Amount Money
 	Category Category
